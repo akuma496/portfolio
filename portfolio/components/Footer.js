@@ -33,7 +33,6 @@ export default function Footer() {
       <div style={{ display: "flex", gap: "1.5rem" }}>
         {[
           { label: "GitHub", href: personal.github },
-          { label: "LinkedIn", href: personal.linkedin },
           { label: "Email", href: `mailto:${personal.email}` },
         ].map((l) => (
           <a key={l.label} href={l.href} target="_blank" rel="noreferrer" className="font-mono" style={{
