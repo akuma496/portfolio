@@ -1,7 +1,11 @@
+// ============================================================
+//  YOUR CONTENT — Edit this file to update everything on site
+// ============================================================
+
 export const personal = {
   name: "Aditya Kumar",
   tagline: "Distributed Systems Engineer",
-  bio: "Inspired builder. I design and deploy infrastructure that doesn't flinch — high-throughput pipelines, resilient orchestration, and systems built to scale. Currently going deep on low-level programming.",
+  bio: "Inspired builder. I design and deploy infrastructure that doesn't flinch — high-throughput pipelines, resilient orchestration, and systems built to scale. Currently finishing my final semester at ASU and open to roles starting May 2026.",
   location: "Tempe, Arizona",
   openToRelocation: true,
   email: "aditya1151999@gmail.com",
@@ -11,8 +15,8 @@ export const personal = {
 };
 
 export const awards = [
-  { emoji: "🏆", title: "HackASU 2025", subtitle: "3rd Place — DeFi Track" },
   { emoji: "🥇", title: "Hacks for Humanity 2025", subtitle: "1st Place" },
+  { emoji: "🏆", title: "HackASU 2025", subtitle: "3rd Place — DeFi Track" },
 ];
 
 export const stack = [
@@ -32,6 +36,10 @@ export const stack = [
     category: "Core Engineering",
     tags: ["System Design", "Concurrency", "RTOS", "Chaos Engineering", "Observability"],
   },
+  {
+    category: "Interests",
+    tags: ["Consensus Algorithms", "DeFi", "AI/ML", "Low-Level Programming", "Embedded Systems"],
+  },
 ];
 
 export const projects = [
@@ -50,7 +58,7 @@ export const projects = [
     stack: ["Go", "Kafka", "CockroachDB", "Prometheus", "Grafana", "Rust"],
     date: "Sept – Dec 2025",
     github: "https://github.com/akuma496",
-    live: null, // ← add a live URL if you have one
+    live: null,
     badge: null,
   },
   {
@@ -62,7 +70,7 @@ export const projects = [
     highlights: [
       "Scaled to 4,000+ users via strict JIT provisioning + automated decommissioning",
       "Bypassed GitHub API limits via multithreaded local git-tree traversal for 100-day commit analysis",
-      "Sub-ms lookups via composite-hash indexing (userid × commit) in MongoDB",
+      "Sub-ms lookups via composite-hash indexing (userid x commit) in MongoDB",
       "Real-time results streamed via WebSockets to reactive Vue.js dashboard",
     ],
     stack: ["Java", "Python", "MongoDB", "Docker", "Vue.js", "WebSockets"],
@@ -88,4 +96,22 @@ export const projects = [
     live: null,
     badge: "🏆 3rd Place",
   },
+  //
+  //{
+  //  id: "dementia-app",
+  //  num: "04",
+  //  title: "Dementia Care Mobile Application",
+  //  description:
+  //    "Faculty capstone project — a mobile application designed to support dementia patients with memory, daily routines, and caregiver communication. Built with a focus on accessibility and compassionate UX.",
+  //  highlights: [
+  //    "Faculty-sponsored capstone project addressing real-world healthcare accessibility",
+  //    "Designed for dementia patients — prioritizing simplicity, large UI elements, and low cognitive load",
+  //    "Caregiver dashboard for monitoring patient activity and sending reminders",
+  //  ],
+  //  stack: ["React Native", "Node.js", "Firebase"],
+  //  date: "2025 – 2026",
+  //  github: null, // ← add when public
+  // live: null,
+  //  badge: "In Progress",
+  //},
 ];
