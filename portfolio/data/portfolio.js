@@ -1,7 +1,3 @@
-// ============================================================
-//  YOUR CONTENT — Edit this file to update everything on site
-// ============================================================
-
 export const personal = {
   name: "Aditya Kumar",
   tagline: "Distributed Systems Engineer",
@@ -11,7 +7,6 @@ export const personal = {
   email: "aditya1151999@gmail.com",
   phone: "+1 (602) 723-1783",
   github: "https://github.com/akuma496",
-  linkedin: "https://linkedin.com/in/your-username", // ← update this
 };
 
 export const awards = [
