@@ -19,15 +19,19 @@ export const awards = [
 export const stack = [
   {
     category: "AI & LLM Layer",
-    tags: ["Claude API", "ChromaDB", "RAG Systems", "LLM Orchestration", "Vector Search", "Prompt Engineering"],
+    tags: ["Claude API", "Gemini", "LangChain", "RAG Systems", "ChromaDB", "pgvector", "Vapi AI", "PubMedBERT", "Prompt Engineering"],
   },
   {
     category: "Frontend & Mobile",
-    tags: ["React", "Next.js", "React Native", "Vue.js", "Tailwind CSS", "TypeScript"],
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vue.js", "Kotlin", "Jetpack Compose"],
   },
   {
     category: "Backend & Data",
-    tags: ["FastAPI", "Node.js", "Python", "SQLite", "Firebase", "MongoDB"],
+    tags: ["FastAPI", "Flask", "Node.js", "Python", "PostgreSQL", "SQLite", "MongoDB", "Pydantic"],
+  },
+  {
+    category: "Web3",
+    tags: ["Solidity", "Hardhat", "Wagmi", "Viem", "RainbowKit", "Ethers"],
   },
   {
     category: "Distributed Systems",
@@ -35,11 +39,11 @@ export const stack = [
   },
   {
     category: "Languages",
-    tags: ["Go", "C++", "Java", "Python", "TypeScript", "SQL", "Solidity"],
+    tags: ["Go", "C++", "Java", "Python", "TypeScript", "Kotlin", "SQL", "Solidity"],
   },
   {
     category: "Cloud & DevOps",
-    tags: ["AWS", "Docker", "Kubernetes", "Terraform", "Prometheus", "Grafana"],
+    tags: ["AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions", "Prometheus", "Grafana", "ngrok"],
   },
   {
     category: "Core Engineering",
@@ -57,15 +61,16 @@ export const projects = [
     num: "01",
     title: "RxRefactor — Drug Policy Intelligence Platform",
     description:
-      "Full-stack RAG system built in 48 hours at Innovation Hacks 2.0. Won 2nd place in the AntoxRX track by replacing hours of manual payer PDF research with instant, sourced, plain-English answers for pharmaceutical market access analysts.",
+      "Full-stack AI-powered medical benefit drug policy tracker built in 36 hours at Innovation Hacks 2.0. Won 2nd place in the AntonRx track by collapsing hours of manual payer PDF research into instant, sourced, plain-English answers for clinicians querying drug coverage across major US payers.",
     highlights: [
       "Won 2nd Place — AntoxRX Track, Innovation Hacks 2.0 @ ASU",
-      "Indexed 2,296 vector chunks across 55 policies and 15 specialty drugs in ChromaDB",
-      "FastAPI backend scrapes real payer portals (BCBS, Cigna, UHC) and parses PDFs via PyMuPDF",
-      "Next.js frontend with side-by-side comparison tables, policy change tracking, and neural TTS readback",
-      "Claude powers the RAG layer for plain-English Q&A with sourced answers",
+      "Two-tier architecture: SQLite structured lookups (free/instant) + Claude RAG pipeline (~$0.01/query) for nuanced questions",
+      "Scraped and chunked payer policy PDFs (BCBS, Cigna, UHC, Priority Health, UPMC) into ~6,100 semantic fragments embedded in ChromaDB",
+      "FastAPI + Pydantic backend with PyMuPDF parsing, BeautifulSoup/httpx scraping, and 10-minute response caching",
+      "Next.js 16 / React 19 / Tailwind 4 frontend with Zustand, React Query, Recharts, and Framer Motion for multi-payer comparison and version diffing",
+      "Hardened Claude system prompt enforces strict grounding in retrieved context with mandatory citations — no fabricated coverage info",
     ],
-    stack: ["FastAPI", "ChromaDB", "Next.js", "Claude", "PyMuPDF", "SQLite", "Python"],
+    stack: ["Next.js", "React", "TypeScript", "Tailwind", "FastAPI", "Pydantic", "Claude", "ChromaDB", "PyMuPDF", "SQLite"],
     date: "Apr 2026",
     github: "https://github.com/RushadW/FourBytes-RxRefactor",
     live: "https://anton-rx-frontend-770871054693.us-central1.run.app",
@@ -82,7 +87,7 @@ export const projects = [
       "Autonomous LLM agents with deterministic validation gates for safe real-time trade execution",
       "Integrated DeFi smart contracts for speculative investing within the Ether.fi system",
     ],
-    stack: ["React", "Node.js", "Claude 3.5", "Python", "Solidity"],
+    stack: ["Next.js", "React", "TypeScript", "Tailwind", "Wagmi", "Viem", "Ethers", "RainbowKit", "Solidity", "Hardhat"],
     date: "Nov 2025",
     github: "https://github.com/Dhyan118/EVO",
     live: null,
@@ -129,13 +134,13 @@ export const projects = [
     num: "05",
     title: "Dementia Care Mobile Application",
     description:
-      "Faculty capstone project — a mobile application designed to support dementia patients with memory, daily routines, and caregiver communication. Built with a focus on accessibility and compassionate UX.",
+      "Faculty capstone project — a native Android app for dementia care featuring voice-driven MMSE cognitive assessments via Vapi AI and a RAG-backed clinical assistant powered by Gemini 2.5 Flash Lite over a PubMedBERT vector store.",
     highlights: [
-      "Faculty-sponsored capstone project addressing real-world healthcare accessibility",
-      "Designed for dementia patients — prioritizing simplicity, large UI elements, and low cognitive load",
-      "Caregiver dashboard for monitoring patient activity and sending reminders",
+      "Native Android app (Kotlin + Jetpack Compose, Material 3) with voice-based MMSE assessments powered by Vapi AI (Deepgram STT + GPT-4o)",
+      "Flask backend with JWT auth and a PostgreSQL + pgvector RAG pipeline using PubMedBERT embeddings and Gemini 2.5 Flash Lite via LangChain",
+      "Dockerized deployment on AWS EC2 with GitHub Actions CI/CD and ngrok-tunneled Vapi webhooks",
     ],
-    stack: ["React Native", "Node.js", "Firebase"],
+    stack: ["Kotlin", "Jetpack Compose", "Flask", "PostgreSQL", "pgvector", "LangChain", "Gemini", "Vapi AI", "Docker", "AWS"],
     date: "2025 – 2026",
     github: null,
     live: null,
