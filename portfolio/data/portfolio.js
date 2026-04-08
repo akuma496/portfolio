@@ -95,7 +95,7 @@ export const projects = [
     description:
       "High-throughput Go/Kafka pipeline ingesting 20GB of raw telemetry in under 60 minutes, with full-stack observability and zero-data-loss resilience validated under simulated node failures.",
     highlights: [
-      "Ingested 20GB raw telemetry in <60 mins via batched CockroachDB commits",
+      "Ingested 20GB raw telemetry in under 60 mins via batched CockroachDB commits",
       "Maintained 2,000+ events/sec via async Kafka commits decoupling Rust parsers from DB writes",
       "Validated Raft leader re-election resilience during peak ingestion",
       "Full observability via Prometheus + Grafana — consumer lag & player-state integrity",
@@ -145,7 +145,7 @@ export const projects = [
     description:
       "High-throughput Go/Kafka pipeline ingesting 20GB of raw telemetry in under 60 minutes, with full-stack observability and zero-data-loss resilience validated under simulated node failures.",
     highlights: [
-      "Ingested 20GB raw telemetry in <60 mins via batched CockroachDB commits",
+      "Ingested 20GB raw telemetry in under 60 mins via batched CockroachDB commits",
       "Maintained 2,000+ events/sec via async Kafka commits decoupling Rust parsers from DB writes",
       "Validated Raft leader re-election resilience during peak ingestion",
       "Full observability via Prometheus + Grafana — consumer lag & player-state integrity",
