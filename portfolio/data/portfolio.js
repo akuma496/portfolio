@@ -7,11 +7,13 @@ export const personal = {
   email: "aditya1151999@gmail.com",
   phone: "+1 (602) 723-1783",
   github: "https://github.com/akuma496",
+  linkedin: "https://www.linkedin.com/in/aditya-kumar15/",
 };
 
 export const awards = [
   { emoji: "🥇", title: "Hacks for Humanity 2025", subtitle: "1st Place" },
   { emoji: "🏆", title: "HackASU 2025", subtitle: "3rd Place — DeFi Track" },
+  { emoji: "🥈", title: "Innovation Hacks 2.0 @ ASU", subtitle: "2nd Place — AntoxRX Track" },
 ];
 
 export const stack = [
@@ -21,7 +23,15 @@ export const stack = [
   },
   {
     category: "Languages",
-    tags: ["Go", "C++", "Java", "Python", "TypeScript", "SQL"],
+    tags: ["Go", "C++", "Java", "Python", "TypeScript", "SQL", "Solidity"],
+  },
+  {
+    category: "Frontend & Mobile",
+    tags: ["React", "Next.js", "React Native", "Vue.js", "Tailwind CSS"],
+  },
+  {
+    category: "Backend & AI",
+    tags: ["FastAPI", "Node.js", "ChromaDB", "SQLite", "Firebase", "Claude API"],
   },
   {
     category: "Cloud & DevOps",
@@ -87,26 +97,44 @@ export const projects = [
     ],
     stack: ["React", "Node.js", "Claude 3.5", "Python", "Solidity"],
     date: "Nov 2025",
-    github: "https://github.com/akuma496",
+    github: "https://github.com/Dhyan118/EVO",
     live: null,
     badge: "🏆 3rd Place",
   },
-  //
-  //{
-  //  id: "dementia-app",
-  //  num: "04",
-  //  title: "Dementia Care Mobile Application",
-  //  description:
-  //    "Faculty capstone project — a mobile application designed to support dementia patients with memory, daily routines, and caregiver communication. Built with a focus on accessibility and compassionate UX.",
-  //  highlights: [
-  //    "Faculty-sponsored capstone project addressing real-world healthcare accessibility",
-  //    "Designed for dementia patients — prioritizing simplicity, large UI elements, and low cognitive load",
-  //    "Caregiver dashboard for monitoring patient activity and sending reminders",
-  //  ],
-  //  stack: ["React Native", "Node.js", "Firebase"],
-  //  date: "2025 – 2026",
-  //  github: null, // ← add when public
-  // live: null,
-  //  badge: "In Progress",
-  //},
+  {
+    id: "rxrefactor",
+    num: "04",
+    title: "RxRefactor — Drug Policy Intelligence Platform",
+    description:
+      "Full-stack RAG system built in 48 hours at Innovation Hacks 2.0. Won 2nd place in the AntoxRX track by replacing hours of manual payer PDF research with instant, sourced, plain-English answers for pharmaceutical market access analysts.",
+    highlights: [
+      "Won 2nd Place — AntoxRX Track, Innovation Hacks 2.0 @ ASU",
+      "Indexed 2,296 vector chunks across 55 policies and 15 specialty drugs in ChromaDB",
+      "FastAPI backend scrapes real payer portals (BCBS, Cigna, UHC) and parses PDFs via PyMuPDF",
+      "Next.js frontend with side-by-side comparison tables, policy change tracking, and neural TTS readback",
+      "Claude powers the RAG layer for plain-English Q&A with sourced answers",
+    ],
+    stack: ["FastAPI", "ChromaDB", "Next.js", "Claude", "PyMuPDF", "SQLite", "Python"],
+    date: "Apr 2026",
+    github: "https://github.com/RushadW/FourBytes-RxRefactor",
+    live: "https://anton-rx-frontend-770871054693.us-central1.run.app",
+    badge: "🥈 2nd Place",
+  },
+  {
+    id: "dementia-app",
+    num: "05",
+    title: "Dementia Care Mobile Application",
+    description:
+      "Faculty capstone project — a mobile application designed to support dementia patients with memory, daily routines, and caregiver communication. Built with a focus on accessibility and compassionate UX.",
+    highlights: [
+      "Faculty-sponsored capstone project addressing real-world healthcare accessibility",
+      "Designed for dementia patients — prioritizing simplicity, large UI elements, and low cognitive load",
+      "Caregiver dashboard for monitoring patient activity and sending reminders",
+    ],
+    stack: ["React Native", "Node.js", "Firebase"],
+    date: "2025 – 2026",
+    github: null,
+    live: null,
+    badge: null,
+  },
 ];
