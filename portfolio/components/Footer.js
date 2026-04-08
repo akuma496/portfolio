@@ -1,5 +1,4 @@
 import { personal } from "@/data/portfolio";
-
 export default function Footer() {
   return (
     <footer style={{
@@ -13,10 +12,9 @@ export default function Footer() {
           ADITYA<br />KUMAR
         </div>
         <div className="font-mono" style={{ fontSize: "0.65rem", color: "var(--text-dim)", letterSpacing: "0.15em" }}>
-          Distributed Systems Engineer · MS @ ASU
+          Full-Stack AI Engineer · MS @ ASU
         </div>
       </div>
-
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem" }}>
         <a href={`mailto:${personal.email}`} className="font-mono" style={{
           fontSize: "0.8rem", color: "var(--white)", textDecoration: "none", letterSpacing: "0.05em",
@@ -29,10 +27,10 @@ export default function Footer() {
           {personal.phone}
         </a>
       </div>
-
       <div style={{ display: "flex", gap: "1.5rem" }}>
         {[
           { label: "GitHub", href: personal.github },
+          { label: "LinkedIn", href: personal.linkedin },
           { label: "Email", href: `mailto:${personal.email}` },
         ].map((l) => (
           <a key={l.label} href={l.href} target="_blank" rel="noreferrer" className="font-mono" style={{
